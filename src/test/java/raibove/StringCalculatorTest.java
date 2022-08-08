@@ -15,4 +15,15 @@ public class StringCalculatorTest {
 
         assertEquals(expectedSum, actualSum);
     }
+
+    @Test
+    void shouldReturnOneAsSumWhenStringIsOne(){
+        StringCalculator stringCalculator = new StringCalculator();
+        String numbers = "1";
+
+        int expectedSum = 1;
+        int actualSum = stringCalculator.add(numbers);
+
+        assertEquals(expectedSum, actualSum);
+    }
 }
