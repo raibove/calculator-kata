@@ -37,4 +37,15 @@ public class StringCalculatorTest {
 
         assertEquals(expectedSum, actualSum);
     }
+
+    @Test
+    void shouldReturnSixAsSumWhenStringIsOneTwoAndThree(){
+        StringCalculator stringCalculator = new StringCalculator();
+        String numbers = "1,2,3";
+
+        int expectedSum = 6;
+        int actualSum = stringCalculator.add(numbers);
+
+        assertEquals(expectedSum, actualSum);
+    }
 }
