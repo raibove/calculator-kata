@@ -12,7 +12,6 @@ public class StringCalculator {
             for(int index = 0; index< numberArray.length; index++){
                 result += numberArray[index];
             }
-            //result = numberArray[0] + numberArray[1];
         }
         return result;
     }
@@ -22,7 +21,6 @@ public class StringCalculator {
         for(int index = 0; index<numberArray.length; index++){
             numberArray[index] = numbers.charAt(index*2) - '0';
         }
-
         return numberArray;
     }
 }

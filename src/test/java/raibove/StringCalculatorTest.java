@@ -48,4 +48,15 @@ public class StringCalculatorTest {
 
         assertEquals(expectedSum, actualSum);
     }
+
+    @Test
+    void shouldReturnThreeAsSumWhenStringIsOneAndTwoSeparatedByNewLine(){
+        StringCalculator stringCalculator = new StringCalculator();
+        String numbers = "1\n2";
+
+        int expectedSum = 3;
+        int actualSum = stringCalculator.add(numbers);
+
+        assertEquals(expectedSum, actualSum);
+    }
 }
